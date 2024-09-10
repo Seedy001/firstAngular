@@ -1,0 +1,9 @@
+
+<!-- src/app/user-list/user-list.component.html -->
+<div class="objet" *ngFor="let objetventes of objetventes">
+    <h2> {{objetventes.title | titlecase }} </h2>
+    <h3> {{objetventes.description | titlecase}} </h3>
+     <img [src]="objetventes.imageUrl" alt="">
+     <p> article créée le {{objetventes.createdAt | date }} </p>
+</div>
+
